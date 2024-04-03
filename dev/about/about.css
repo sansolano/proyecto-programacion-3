@@ -1,0 +1,51 @@
+body{
+    background-color: #bbbbbb;
+}
+
+.about{
+    margin-top: 140px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color:  #acabab;
+    border-radius:10px;
+    
+}
+
+button:hover{
+    background-color: rgb(56, 112, 11);
+}
+
+#misionId{
+    display: none;   
+}
+
+#visionId{
+    display: none;   
+}
+
+.misionyvision {
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: #2f1d43;
+    color: #bbbbbb;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 40px;
+    text-align: center;
+}
