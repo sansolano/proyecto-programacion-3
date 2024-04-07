@@ -1,7 +1,15 @@
 body{
+    font-family: 'Segoe UI';
     background-color: #bbbbbb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+.title{
+    color: #ff5000;
+    font-weight: bold;
+}
 .about{
     margin-top: 140px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,13 +29,15 @@ button{
     width: 100px;
     height: 40px;
     border: none;
-    background-color:  #acabab;
+    background-color:  #E5E1DD;
+    font-weight: bold;
     border-radius:10px;
     
 }
 
 button:hover{
-    background-color: rgb(56, 112, 11);
+    background-color: #ff5000;
+    color: #ffffff;
 }
 
 #misionId{
@@ -42,8 +52,9 @@ button:hover{
     padding: 1rem;
     font-size: 20px;
     border-radius: 6px;
-    background-color: #2f1d43;
-    color: #bbbbbb;
+    background-color: #E5E1DD;
+    font-weight: bold;
+    color: #000000;
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 40px;

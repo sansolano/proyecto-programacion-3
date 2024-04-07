@@ -7,12 +7,12 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <style>
             header {
+                
                 background-color: #ff5000;
                 display: flex;
                 align-items: center;
                 height: 100px;
                 width: 100%;
-                position: fixed;
                 left: 0px;
                 top: 0px;
                 color: white; /* Color de texto blanco */
@@ -52,7 +52,7 @@ class Header extends HTMLElement {
             <img src="../imagenes/logo.png">
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">Inicio</a>
+                <a class="navbar-brand" href="../homepage/homepage.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -73,7 +73,7 @@ class Header extends HTMLElement {
                   </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Sobre nosotros</a>
+                      <a class="nav-link" href="../about/about.html">Sobre nosotros</a>
                     </li>
                   </ul>
                 </div>
