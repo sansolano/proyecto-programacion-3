@@ -8,44 +8,10 @@
 	scrollbar-width: none; /* Hide scrollbar Firefox */
 }
 
-.logo{
-	float: left;
-	width: 10%;
-	position:fixed; top:0; left:0;
-}
-
-header {
-    background-color: #bbbbbb ;
-}
-
 .caja{
     width: 940px;
     position: relative;
     margin: 0 auto;
-}
-
-nav{
-    position: absolute;
-    top: 110px;
-    right: 0px;
-}
-
-nav li{
-    display: inline;
-    margin: 0 0 0 15px; /* Recibe 4 parametros el primero es arriba, el segundo es abajo, el tercero a la izquierda y el ultimo a la derecha*/
-}
-
-nav a{
-    text-transform: uppercase;
-    color:black;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: #c78c19;
-    text-decoration: underline;
 }
 
 .slider {
