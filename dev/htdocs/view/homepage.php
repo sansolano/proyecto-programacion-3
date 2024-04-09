@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LA CAZADORA R.L.</title>
+      <link rel="stylesheet" href="../reset.css">
+      <link rel="stylesheet" href="../css/homepage.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <header>
+         <?php include('header.php'); ?> 
+      </header>
+      <div id="carouselExampleCaptions" class="carousel slide">
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="https://images.unsplash.com/photo-1572675339312-3e8b094a544d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Terminal de buses">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Terminal de autobuses</h5>
+                  <p>Contamos con una amplia terminal para multiples llegadas y salidas.</p>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Asientos de autobus">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Autobuses 5 estrellas</h5>
+                  <p>Nos caracterizamos por brindar un servicio comodo y satisfactorio.</p>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Autobus en montañas">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Servicios a todas horas</h5>
+                  <p>Tenemos servicio a todas horas para brindar una atención de primera calidad.</p>
+               </div>
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <div class="services">
+         <div class="inner">
+            <h1>Servicios</h1>
+            <div class="border"></div>
+            <div class="row-services">
+               <div class="col">
+                  <div class="service">
+                     <img src="https://images.unsplash.com/photo-1594935975218-a3596da034a3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                     <div class="name">Rutas</div>
+                     <p>
+                        Conoce las rutas que tenemos para ofrecerte y conocer el país.
+                     </p>
+                     <a href="../servicespage/servicespage.html">
+                     <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .90rem;--bs-btn-bg: #ff5000;--bs-btn-border-color: #ff5000; ">
+                     Click aquí
+                     </button>
+                     </a>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="service">
+                     <img src="https://images.unsplash.com/photo-1622662124723-5c60aafebd4f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Precios">
+                     <div class="name">Precios</div>
+                     <p>
+                        Conoce los precios que tenemos para ofrecerte.
+                     </p>
+                     <a href="../servicespage/servicespage.html">
+                     <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .90rem;--bs-btn-bg: #ff5000;--bs-btn-border-color: #ff5000; ">
+                     Click aquí
+                     </button>
+                     </a>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="service">
+                     <img src="https://images.unsplash.com/photo-1490430657723-4d607c1503fc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                     <div class="name">Horarios</div>
+                     <p>
+                        Conoce nuestros horarios de llegadas y salidas.
+                     </p>
+                     <a href="../servicespage/servicespage.html">
+                     <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .90rem;--bs-btn-bg: #ff5000;--bs-btn-border-color: #ff5000; ">
+                     Click aquí
+                     </button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="testimonials">
+         <div class="inner">
+            <h1>Testimonios</h1>
+            <div class="border"></div>
+            <div class="row">
+               <div class="col">
+                  <div class="testimonial">
+                     <img src="../imagenes/testiminio1.png" alt="">
+                     <div class="name">Francisco</div>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <p>
+                        La reputación de La Cazadora es indiscutible: calidad en el servicio, tarifas competitivas y puntuación.
+                     </p>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="testimonial">
+                     <img src="../imagenes/testiminio2.png" alt="">
+                     <div class="name">Tatiana</div>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </div>
+                     <p>
+                        La Cazadora ofrece una experiencia de viaje excepcional: comodidad, precios justos y puntualidad impecable.
+                     </p>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="testimonial">
+                     <img src="../imagenes/testiminio3.png" alt="">
+                     <div class="name">Alejandra</div>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </div>
+                     <p>
+                        Viajar con La Cazadora es sinónimo de confort, buen precio y puntualidad garantizada.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class ="buttons_social">
+         <br><br>
+         <section class="buttons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google-plus"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+         </section>
+         <br><br>
+      </div>
+      <footer>
+         <?php include('footer.php'); ?> 
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   </body>
+</html>

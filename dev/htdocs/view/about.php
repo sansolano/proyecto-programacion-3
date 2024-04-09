@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LA CAZADORA R.L.</title>
+      <link rel="stylesheet" href="../css/about.css">
+      <link rel="stylesheet" href="../css/header.css">
+      <link rel="stylesheet" href="../css/reset.css">
+      <script src="../js/about.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   </head>
+   <body>
+      <header>
+         <?php include('header.php'); ?> 
+      </header>
+      <div class="about">
+         <h1 class = "title">A cerca de nosotros</h1>
+         <p>
+            Bienvenido a La Cazadora, tu socio confiable en el mundo del transporte público. Desde nuestra fundación, nos hemos comprometido a brindar servicios de transporte seguro, confiable y eficiente para satisfacer las necesidades de nuestra comunidad.
+            <br><br>
+            En La Cazadora, valoramos la importancia de conectar personas y lugares. Nos enorgullece ser parte integral de la vida diaria de quienes confían en nosotros para llegar a sus destinos de manera puntual y cómoda.
+            <br><br>
+            Nuestro equipo está formado por profesionales apasionados y dedicados que se esfuerzan por superar las expectativas de nuestros clientes en cada viaje. Nos comprometemos a mantener nuestros estándares de seguridad y servicio al más alto nivel, garantizando que cada experiencia con nosotros sea placentera y sin contratiempos.
+         </p>
+      </div>
+      <div class="buttons">
+         <button onClick="misionClick()">Mision</button>
+         <button onclick="visionClick()">Vision</button>
+      </div>
+      <div class="misionyvision">
+         <p id="misionId">En La Cazadora, nos dedicamos a proporcionar un transporte público seguro, confiable y accesible, mejorando la calidad de vida de nuestra 
+            comunidad y promoviendo la movilidad inclusiva para todos            
+         </p>
+         <p id="visionId">Nos esforzamos por ser líderes en el transporte público, destacando por nuestra excelencia, innovación y compromiso con la sostenibilidad, 
+            contribuyendo a un futuro de comunidades más conectadas y equitativas.
+         </p>
+      </div>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <footer>
+         <?php include('footer.php'); ?> 
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   </body>
+</html>
