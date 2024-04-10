@@ -28,6 +28,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../view/about.php">Sobre nosotros</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/contactUs.php">CONTACTENOS</a>
+                        </li>
                         <li class="nav-button">
                             <a href="../view/login.php" class="btn btn-secondary">INGRESAR</a>
                         </li>
