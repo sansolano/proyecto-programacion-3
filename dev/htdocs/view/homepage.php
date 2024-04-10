@@ -64,7 +64,7 @@
                      <p>
                         Conoce las rutas que tenemos para ofrecerte y conocer el país.
                      </p>
-                     <a href="../servicespage/servicespage.html">
+                     <a href="../view/servicespage.php">
                      <button type="button" class="btn btn-primary"
                         style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .90rem;--bs-btn-bg: #ff5000;--bs-btn-border-color: #ff5000; ">
                      Click aquí
@@ -79,7 +79,7 @@
                      <p>
                         Conoce los precios que tenemos para ofrecerte.
                      </p>
-                     <a href="../servicespage/servicespage.html">
+                     <a href="../view/servicespage.php">
                      <button type="button" class="btn btn-primary"
                         style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .90rem;--bs-btn-bg: #ff5000;--bs-btn-border-color: #ff5000; ">
                      Click aquí
@@ -94,7 +94,7 @@
                      <p>
                         Conoce nuestros horarios de llegadas y salidas.
                      </p>
-                     <a href="../servicespage/servicespage.html">
+                     <a href="../view/servicespage.php">
                      <button type="button" class="btn btn-primary"
                         style="--bs-btn-padding-y: .90rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .90rem;--bs-btn-bg: #ff5000;--bs-btn-border-color: #ff5000; ">
                      Click aquí
@@ -112,7 +112,7 @@
             <div class="row">
                <div class="col">
                   <div class="testimonial">
-                     <img src="../imagenes/testiminio1.png" alt="">
+                     <img src="../images/testiminio1.png" alt="">
                      <div class="name">Francisco</div>
                      <div class="stars">
                         <i class="fas fa-star"></i>
@@ -128,7 +128,7 @@
                </div>
                <div class="col">
                   <div class="testimonial">
-                     <img src="../imagenes/testiminio2.png" alt="">
+                     <img src="../images/testiminio2.png" alt="">
                      <div class="name">Tatiana</div>
                      <div class="stars">
                         <i class="fas fa-star"></i>
@@ -144,7 +144,7 @@
                </div>
                <div class="col">
                   <div class="testimonial">
-                     <img src="../imagenes/testiminio3.png" alt="">
+                     <img src="../images/testiminio3.png" alt="">
                      <div class="name">Alejandra</div>
                      <div class="stars">
                         <i class="fas fa-star"></i>
