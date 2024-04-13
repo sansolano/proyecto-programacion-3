@@ -35,8 +35,8 @@
                                     <span class="h1 fw-bold mb-0">LA CAZADORA R.L.</span>
                                  </div>
                                  <?php 
-                                    include('conexion.php');
-                                    include('controlador.php'); 
+                                    include('php/conexion.php');
+                                    include('php/controlador.php'); 
                                  ?>
                                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Bienvenido</h5>
                                  <div data-mdb-input-init class="form-outline mb-4">

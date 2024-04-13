@@ -1,9 +1,12 @@
 <?php
-   include('php/connection.php');
+   include('connection.php');
    $con = connection();
    
-   $sql = "SELECT * from crud_buses";
+   $Id_Bus=$_GET['Id_Bus'];
+   
+   $sql = "SELECT * FROM crud_buses WHERE idBus = '$Id_Bus'";
    $query = mysqli_query($con, $sql);
+   $row=mysqli_fetch_array($query);  //raiz del usuario especifico
    ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +19,6 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
       <link rel="stylesheet" href="../../css/slicebard.css">
-      <link rel="stylesheet" href="./../css/dashboard.css">
    </head>
    <body>
       <div class="wrapper">
@@ -31,7 +33,7 @@
             </div>
             <ul class="sidebar-nav">
             <li class="sidebar-item">
-                  <a href="../view/dashboard.php" class="sidebar-link">
+                  <a href="../dashboard.php" class="sidebar-link">
                   <i class="lni lni-layout"></i>
                   <span>Inicio</span>
                   </a>
@@ -56,7 +58,7 @@
                   </a>
                   <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                      <li class="sidebar-item">
-                        <a href="crud_bus.php" class="sidebar-link">Autobuses</a>
+                        <a href="#" class="sidebar-link">Autobuses</a>
                      </li>
                      <li class="sidebar-item">
                         <a href="#" class="sidebar-link">Usuarios</a>
@@ -65,7 +67,7 @@
                </li>
             </ul>
             <div class="sidebar-footer">
-               <a href="login.php" class="sidebar-link">
+               <a href="../login.php" class="sidebar-link">
                <i class="lni lni-exit"></i>
                <span>Salir</span>
                </a>
@@ -73,11 +75,54 @@
          </aside>
          <div class="main p-3">
             <div class="text-center">
-               <h1>Bienvenido</h1>
+               <h1>Editar registro</h1>
                <br>
                <br>
                <br>
-               <br>
+               <form action="edit_bus.php" method="POST">
+                  <div class="row g-3">
+                     <div class="col-md-4">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <label for="NombreBus" class="form-label">Nombre del bus:</label>
+                     </div>
+                     <div class="col-md-8">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <input type="text" name="NombreBus" placeholder="Nombre Bus" value="<?= $row['nombre_bus']?>">
+                     </div>
+                  </div>
+                    <br>
+
+                  <div class="row g-3">
+                     <div class="col-md-4">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <label for="Capacidad" class="form-label">Capacidad:</label>
+                     </div>
+                     <div class="col-md-8">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <input type="text" name="Capacidad" placeholder="Capacidad" value="<?= $row['capacidad']?>">
+                     </div>
+                  </div>
+                  <br>
+
+                  <div class="row g-3">
+                     <div class="col-md-4">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <label for="CostoXkm" class="form-label">Costo por kilómetro:</label>
+                     </div>
+                     <div class="col-md-8">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <input type="text" name="CostoXkm" placeholder="Costo por km" value="<?= $row['costo_km']?>">
+                     </div>
+                  </div>
+                    <br>
+
+                  <input class= "btn btn-primary" type="submit" value="Actualizar">
+               </form>
+               <div class="users-table">
+                  <br>
+                  <br>      
+        
+               </div>
             </div>
          </div>
       </div>

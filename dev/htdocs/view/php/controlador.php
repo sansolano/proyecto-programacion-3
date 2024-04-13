@@ -8,11 +8,14 @@
             $contrasena=$_POST["contrasena"];
             $sql=$conn->query(" SELECT * FROM login_register_user WHERE usuario='$usuario' AND contrasena='$contrasena' ");
             if ($datos=$sql->fetch_object()) {
+                session_start();
+                $_SESSION['usuario'] = $usuario;
                 echo '<script>
                 setTimeout(function() {
                     window.location.href = "dashboard.php";
                 }, 10); // Redirigir después de 3 segundos (3000 milisegundos)
              </script>';
+
             } else {
                 echo '<div class="alert alert-danger">Usuario o contraseña incorrectos</div>';
             }

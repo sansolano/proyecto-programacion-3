@@ -44,5 +44,22 @@ if($conn->query($sql) === true){
 }
 */
 
+// creacion de la tabla del buses
+
+/* 
+$sql = "CREATE TABLE crud_buses(
+	idBus INT(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_bus VARCHAR(100) NOT NULL,
+	capacidad INT(11) NOT NULL,
+	costo_km INT(11) NOT NULL,
+	timestamp TIMESTAMP
+)";
+
+if($conn->query($sql) === true){
+	echo "La tabla se creó correctamente...";
+}else{
+	die("Error al crear tabla: " . $conn->error);
+}
+*/
 
 ?>
