@@ -47,21 +47,6 @@
                   <span>Reservas</span>
                   </a>
                </li>
-               <li class="sidebar-item">
-                  <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                     data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                  <i class="lni lni-cog"></i>
-                  <span>Administración</span>
-                  </a>
-                  <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                     <li class="sidebar-item">
-                        <a href="crud_bus.php" class="sidebar-link">Autobuses</a>
-                     </li>
-                     <li class="sidebar-item">
-                        <a href="crudUsers.php" class="sidebar-link">Usuarios</a>
-                     </li>
-                  </ul>
-               </li>
             </ul>
             <div class="sidebar-footer">
                <a href="login.php" class="sidebar-link">

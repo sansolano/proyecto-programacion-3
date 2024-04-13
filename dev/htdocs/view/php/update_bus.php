@@ -39,7 +39,7 @@
                   </a>
                </li>
                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="../crudUsers.php" class="sidebar-link">
                   <i class="lni lni-user"></i>
                   <span>Usuario</span>
                   </a>
@@ -58,10 +58,10 @@
                   </a>
                   <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                      <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Autobuses</a>
+                        <a href="../crud_bus.php" class="sidebar-link">Autobuses</a>
                      </li>
                      <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Usuarios</a>
+                        <a href="../crudUsers.php" class="sidebar-link">Usuarios</a>
                      </li>
                   </ul>
                </li>

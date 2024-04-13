@@ -51,7 +51,7 @@
                                  <input name="btningresar" class= "btn btn-dark btn-lg btn-block" type="submit" value = "INICIAR SESION" style="background: #ff5000; border: none;">
                                  </div>
                                  <a class="small text-muted" href="#!">Olvide mi contraseña?</a>
-                                 <p class="mb-5 pb-lg-2" style="color: #393f81;">No tienes cuenta? <a href="#!"
+                                 <p class="mb-5 pb-lg-2" style="color: #393f81;">No tienes cuenta? <a href="crud_register.php"
                                     style="color: #393f81;">Registrar aquí</a></p>
                               </form>
                            </div>

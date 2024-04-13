@@ -1,10 +1,15 @@
 <?php
-   include('php/connection.php');
-   $con = connection();
-   
-   $sql = "SELECT * from crud_buses";
-   $query = mysqli_query($con, $sql);
-   ?>
+
+include('connection.php');
+$con = connection();
+
+$Id = $_GET['id'];
+
+$sql = "SELECT * FROM login_register_user WHERE id = '$Id'";
+$query = mysqli_query($con, $sql);
+$row=mysqli_fetch_array($query);  //raiz del usuario especifico
+?>
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -30,7 +35,7 @@
             </div>
             <ul class="sidebar-nav">
             <li class="sidebar-item">
-                  <a href="../view/dashboard.php" class="sidebar-link">
+                  <a href="../dashboard.php" class="sidebar-link">
                   <i class="lni lni-layout"></i>
                   <span>Inicio</span>
                   </a>
@@ -55,16 +60,16 @@
                   </a>
                   <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                      <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Autobuses</a>
+                        <a href="../crud_bus.php" class="sidebar-link">Autobuses</a>
                      </li>
                      <li class="sidebar-item">
-                        <a href="../view/crudUsers.php" class="sidebar-link">Usuarios</a>
+                        <a href="../crudUsers.php" class="sidebar-link">Usuarios</a>
                      </li>
                   </ul>
                </li>
             </ul>
             <div class="sidebar-footer">
-               <a href="login.php" class="sidebar-link">
+               <a href="../login.php" class="sidebar-link">
                <i class="lni lni-exit"></i>
                <span>Salir</span>
                </a>
@@ -72,76 +77,102 @@
          </aside>
          <div class="main p-3">
             <div class="text-center">
-               <h1> Lista de autobuses</h1>
+               <h1>Editar usuario</h1>
                <br>
                <br>
                <br>
-               <form action="php/insert.php" method="POST">
+               <form action="editUser.php" method="POST">
+               <input type="hidden" name="id" value="<?= $row['id']?>">
                   <div class="row g-3">
                      <div class="col-md-4">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="NombreBus" class="form-label">Nombre del bus:</label>
+                        <label for="usuario" class="form-label">Usuario:</label>
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="NombreBus" class="form-control">
+                        <input type="text" name="usuario" placeholder="Usuario" value="<?= $row['usuario']?>">
                      </div>
                   </div>
                     <br>
+
                   <div class="row g-3">
                      <div class="col-md-4">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="Capacidad" class="form-label">Capacidad:</label>
+                        <label for="Nombre" class="form-label">Nombre:</label>
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="Capacidad" class="form-control">
+                        <input type="text" name="nombre" placeholder="Nombre" value="<?= $row['nombre']?>">
                      </div>
                   </div>
                   <br>
+
                   <div class="row g-3">
                      <div class="col-md-4">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="CostoXkm" class="form-label">Costo por kilómetro:</label>
+                        <label for="apellido1" class="form-label">Apellido 1:</label>
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="CostoXkm" class="form-control">
+                        <input type="text" name="apellido1" placeholder="Apellido 1" value="<?= $row['apellido1']?>">
                      </div>
                   </div>
                     <br>
-                  <input class= "btn btn-primary" type="submit" value="Agregar">
+
+                    <div class="row g-3">
+                     <div class="col-md-4">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <label for="apellido2" class="form-label">Apellido 2:</label>
+                     </div>
+                     <div class="col-md-8">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <input type="text" name="apellido2" placeholder="Apellido 2" value="<?= $row['apellido2']?>">
+                     </div>
+                  </div>
+                  <br>
+
+                  <div class="row g-3">
+                     <div class="col-md-4">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <label for="email" class="form-label">Email:</label>
+                     </div>
+                     <div class="col-md-8">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <input type="text" name="email" placeholder="Email" value="<?= $row['email']?>">
+                     </div>
+                  </div>
+                  <br>
+
+                  <div class="row g-3">
+                     <div class="col-md-4">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <label for="contrasena" class="form-label">Contraseña:</label>
+                     </div>
+                     <div class="col-md-8">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <input type="text" name="contrasena" placeholder="Contrasena" value="<?= $row['contrasena']?>">
+                     </div>
+                  </div>
+                  <br>
+
+                  <div class="row g-3">
+                     <div class="col-md-4">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <label for="telefono" class="form-label">Telefono:</label>
+                     </div>
+                     <div class="col-md-8">
+                        <!-- Usa col-md-* para dispositivos medianos -->
+                        <input type="text" name="telefono" placeholder="Telefono" value="<?= $row['Telefono']?>">
+                     </div>
+                  </div>
+                  <br>
+
+                  <input class= "btn btn-primary" type="submit" value="Actualizar">
                </form>
                <div class="users-table">
                   <br>
                   <br>      
-                  <h2>Buses Registrados</h2>
-                  <br>
-                  <br>
-                  <table class="table table-striped table-hover">
-                     <thead>
-                        <tr>
-                           <th>Codigo bus</th>
-                           <th>Nombre del bus</th>
-                           <th>Capacidad</th>
-                           <th>Costo por kilometro</th>
-                           <th>Editar</th>
-                           <th>Eliminar</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <?php while($row = mysqli_fetch_array($query)): ?>
-                        <tr>
-                           <th> <?= $row['idBus'] ?> </th>
-                           <th> <?= $row['nombre_bus'] ?> </th>
-                           <th> <?= $row['capacidad'] ?> </th>
-                           <th> <?= $row['costo_km'] ?> </th>
-                           <th><a href="php/update_bus.php?Id_Bus=<?= $row['idBus'] ?>" class="users-table--edit">Editar</a></th>
-                           <th><a href="php/delete_bus.php?Id_Bus=<?= $row['idBus'] ?>" class="users-table--delete">Eliminar</a></th>
-                        </tr>
-                        <?php endwhile; ?>
-                     </tbody>
-                  </table>
+        
                </div>
             </div>
          </div>
