@@ -26,14 +26,14 @@ if($conn->query($sql) === true){
 */
 
 // creacion de la tabla del login
-
 /*
-$sql = "CREATE TABLE login_register_user(
+$sql = "CREATE TABLE login_register_user_2(
 	id INT(11) AUTO_INCREMENT PRIMARY KEY,
 	usuario VARCHAR(100) NOT NULL,
 	nombre VARCHAR(100) NOT NULL,
 	email VARCHAR(100) NOT NULL,
 	contrasena VARCHAR(100) NOT NULL,
+	admin BOOLEAN NOT NULL,
 	timestamp TIMESTAMP
 )";
 

@@ -23,7 +23,7 @@
                             <a class="nav-link" href="../view/servicespage.php">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../login/login.html">Unidades</a>
+                            <a class="nav-link active" aria-current="page" href="../view/unidades.php">Unidades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../view/about.php">Sobre nosotros</a>
