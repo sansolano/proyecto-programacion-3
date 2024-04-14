@@ -36,7 +36,7 @@
                   </a>
                </li>
                <li class="sidebar-item">
-                  <a href="../view/crudUsers.php" class="sidebar-link">
+                  <a href="#" class="sidebar-link">
                   <i class="lni lni-user"></i>
                   <span>Usuario</span>
                   </a>
