@@ -164,11 +164,11 @@
       <div class ="buttons_social">
          <br><br>
          <section class="buttons">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google-plus"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com/tuasacr/?locale=es_LA" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.google.com/search?q=Grupo+Tuasa&sca_esv=ee0ce238400f6c7c&sca_upv=1&sxsrf=ACQVn09_31kL6VOFooLJgl0RKhLCimc_rQ%3A1713025158683&ei=hrAaZpSjKe-CwbkPgOqNuAo&ved=0ahUKEwiU_suAzL-FAxVvQTABHQB1A6cQ4dUDCBA&uact=5&oq=Grupo+Tuasa&gs_lp=Egxnd3Mtd2l6LXNlcnAiC0dydXBvIFR1YXNhMgoQIxiABBiKBRgnMgoQABiABBiKBRhDMgUQABiABDIIEAAYgAQYywEyBhAAGBYYHjIIEAAYFhgeGA9IhBRQAFjDDXAAeAGQAQCYAY8BoAHRCqoBBDAuMTG4AQPIAQD4AQGYAgugAvIKwgIKEC4YgAQYigUYJ8ICFhAuGIAEGIoFGEMYsQMYgwEYxwEY0QPCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIEECMYJ8ICFhAuGIAEGBQYhwIYsQMYgwEYxwEY0QPCAg4QLhiABBixAxjHARivAcICDhAAGIAEGIoFGLEDGIMBwgIIEC4YsQMYgATCAgsQLhiABBjHARivAcICERAuGIAEGLEDGIMBGMcBGNEDwgILEC4YgAQYsQMYgwHCAgsQLhiABBjHARjRA8ICCxAuGK8BGMcBGIAEwgIFEC4YgASYAwCSBwQwLjExoAeLlQE&sclient=gws-wiz-serp" class="fa fa-google-plus"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
          </section>
          <br><br>
       </div>

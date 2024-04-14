@@ -36,13 +36,13 @@
                   </a>
                </li>
                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="../view/crudUsers.php" class="sidebar-link">
                   <i class="lni lni-user"></i>
                   <span>Usuario</span>
                   </a>
                </li>
                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="../view/reserva_crud_admin.php" class="sidebar-link">
                   <i class="lni lni-agenda"></i>
                   <span>Reservas</span>
                   </a>
@@ -55,7 +55,7 @@
                   </a>
                   <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                      <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Autobuses</a>
+                        <a href="../view/crud_bus.php" class="sidebar-link">Autobuses</a>
                      </li>
                      <li class="sidebar-item">
                         <a href="../view/crudUsers.php" class="sidebar-link">Usuarios</a>
@@ -64,7 +64,7 @@
                </li>
             </ul>
             <div class="sidebar-footer">
-               <a href="login.php" class="sidebar-link">
+               <a href="homepage.php" class="sidebar-link">
                <i class="lni lni-exit"></i>
                <span>Salir</span>
                </a>

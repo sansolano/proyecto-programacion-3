@@ -1,15 +1,12 @@
 <?php
-
-include('connection.php');
-$con = connection();
-
-$Id = $_GET['id'];
-
-$sql = "SELECT * FROM login_register_user WHERE id = '$Id'";
-$query = mysqli_query($con, $sql);
-$row=mysqli_fetch_array($query);  //raiz del usuario especifico
+   include('connection.php');
+   $con = connection();
+   
+   $Id = $_GET['id'];
+   $sql = "SELECT * FROM crud_reservas WHERE idReserva = '$Id'";
+   $query = mysqli_query($con, $sql);
+   $row = mysqli_fetch_array($query);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -34,7 +31,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                </div>
             </div>
             <ul class="sidebar-nav">
-            <li class="sidebar-item">
+               <li class="sidebar-item">
                   <a href="../dashboard.php" class="sidebar-link">
                   <i class="lni lni-layout"></i>
                   <span>Inicio</span>
@@ -77,110 +74,80 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
          </aside>
          <div class="main p-3">
             <div class="text-center">
-               <h1>Editar usuario</h1>
+               <h1>Editar reserva</h1>
                <br>
                <br>
                <br>
-               <form action="editUser.php" method="POST">
-               <input type="hidden" name="id" value="<?= $row['id']?>">
+               <form action="editReserva.php" method="POST">
+                  <input type="hidden" name="id" value="<?= $row['idReserva']?>">
+                  <br>
                   <div class="row g-3">
                      <div class="col-md-4">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="usuario" class="form-label">Usuario:</label>
+                        <label for="opciones" class="form-label">Ruta:</label>
                      </div>
                      <div class="col-md-8">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="usuario" placeholder="Usuario" value="<?= $row['usuario']?>">
-                     </div>
-                  </div>
-                    <br>
-
-                  <div class="row g-3">
-                     <div class="col-md-4">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="Nombre" class="form-label">Nombre:</label>
-                     </div>
-                     <div class="col-md-8">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="nombre" placeholder="Nombre" value="<?= $row['nombre']?>">
+                        <select name="rutas" id="rutas" class="form-select">
+                           <option value="Alajeula - San José" <?php if ($row['ruta'] == "Alajuela - San José") echo "selected"; ?>>Alajuela - San José</option>
+                           <option value="Alajeula - Aurora" <?php if ($row['ruta'] == "Alajuela - Aurora") echo "selected"; ?>>Alajuela - Aurora</option>
+                           <option value="Alajeula - San Juan" <?php if ($row['ruta'] == "Alajuela - San Juan") echo "selected"; ?>>Alajuela - San Juan</option>
+                        </select>
                      </div>
                   </div>
                   <br>
-
                   <div class="row g-3">
                      <div class="col-md-4">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="apellido1" class="form-label">Apellido 1:</label>
+                        <label for="kilometros" class="form-label">Kilometros:</label>
                      </div>
                      <div class="col-md-8">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="apellido1" placeholder="Apellido 1" value="<?= $row['apellido1']?>">
-                     </div>
-                  </div>
-                    <br>
-
-                    <div class="row g-3">
-                     <div class="col-md-4">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="apellido2" class="form-label">Apellido 2:</label>
-                     </div>
-                     <div class="col-md-8">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="apellido2" placeholder="Apellido 2" value="<?= $row['apellido2']?>">
+                        <select name="kilometros" id="kilometros" class="form-select">
+                           <option value="60" <?php if ($row['kilometros'] == "60") echo "selected"; ?>>60</option>
+                           <option value="45" <?php if ($row['kilometros'] == "45") echo "selected"; ?>>45</option>
+                           <option value="30" <?php if ($row['kilometros'] == "30") echo "selected"; ?>>30</option>
+                        </select>
                      </div>
                   </div>
                   <br>
-
                   <div class="row g-3">
                      <div class="col-md-4">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="email" class="form-label">Email:</label>
+                        <label for="asientos" class="form-label">Asientos:</label>
                      </div>
                      <div class="col-md-8">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="email" placeholder="Email" value="<?= $row['email']?>">
+                        <select name="asientos" id="asientos" class="form-select">
+                           <option value="40" <?php if ($row['asientos'] == "40") echo "selected"; ?>>40</option>
+                           <option value="50" <?php if ($row['asientos'] == "50") echo "selected"; ?>>50</option>
+                           <option value="60" <?php if ($row['asientos'] == "60") echo "selected"; ?>>60</option>
+                        </select>
                      </div>
                   </div>
                   <br>
-
                   <div class="row g-3">
                      <div class="col-md-4">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="contrasena" class="form-label">Contraseña:</label>
+                        <label for="costo" class="form-label">Costo por asiento:</label>
                      </div>
                      <div class="col-md-8">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="contrasena" placeholder="Contrasena" value="<?= $row['contrasena']?>">
+                        <select name="costo" id="costo" class="form-select">
+                           <option value="740" <?php if ($row['costo'] == "740") echo "selected"; ?>>740</option>
+                           <option value="335" <?php if ($row['costo'] == "335") echo "selected"; ?>>335</option>
+                           <option value="240" <?php if ($row['costo'] == "240") echo "selected"; ?>>240</option>
+                        </select>
                      </div>
                   </div>
                   <br>
-
                   <div class="row g-3">
                      <div class="col-md-4">
-                        <!-- Usa col-md-* para dispositivos medianos -->
-                        <label for="telefono" class="form-label">Telefono:</label>
+                        <label for="costo" class="form-label">Estado:</label>
                      </div>
                      <div class="col-md-8">
-                        <input type="text" name="telefono" placeholder="Telefono" value="<?= $row['Telefono']?>">
-                     </div>
-                     <br>
-                     <div class="row g-3">
-                     <div class="col-md-4">
-                        <label for="adm" class="form-label">Tipo de usuario:</label>
-                     </div>
-                     <div class="col-md-8">
-                        <input type="text" name="adm" placeholder="Tipo de usuario" value="<?= $row['adm']?>">
+                        <select name="estadoViaje" id="estadoViaje" class="form-select">
+                        <option value="Pendiente" <?php if ($row['estadoViaje'] == "Pendiente") echo "selected"; ?>>Pendiente</option>
+                        <option value="Cancelado" <?php if ($row['estadoViaje'] == "Cancelado") echo "selected"; ?>>Cancelado</option>
+                        <option value="Realizado" <?php if ($row['estadoViaje'] == "Realizado") echo "selected"; ?>>Realizado</option>
+                        </select>
                      </div>
                   </div>
-</div>
                   <br>
                   <input class= "btn btn-primary" type="submit" value="Actualizar">
                </form>
-               <div class="users-table">
-                  <br>
-                  <br>      
-        
-               </div>
             </div>
          </div>
       </div>

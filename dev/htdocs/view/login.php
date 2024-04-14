@@ -15,7 +15,7 @@
    </head>
    <body>
       <header>
-         <?php include('header.php'); ?> 
+         
       </header>
       <section class="vh-100" style="background-color: #ffffff;">
          <div class="container py-5 h-100">
@@ -63,7 +63,7 @@
          </div>
       </section>
       <footer>
-      <?php include('footer.php'); ?> 
+      
       </footer
 
       <script 

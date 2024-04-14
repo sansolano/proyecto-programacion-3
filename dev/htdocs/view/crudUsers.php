@@ -37,13 +37,13 @@ $query = mysqli_query($con, $sql);
                   </a>
                </li>
                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="../view/crudUsers.php" class="sidebar-link">
                   <i class="lni lni-user"></i>
                   <span>Usuario</span>
                   </a>
                </li>
                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
+                  <a href="../view/reserva_crud_Admin.php" class="sidebar-link">
                   <i class="lni lni-agenda"></i>
                   <span>Reservas</span>
                   </a>
@@ -65,7 +65,7 @@ $query = mysqli_query($con, $sql);
                </li>
             </ul>
             <div class="sidebar-footer">
-               <a href="login.php" class="sidebar-link">
+               <a href="homepage.php" class="sidebar-link">
                <i class="lni lni-exit"></i>
                <span>Salir</span>
                </a>
