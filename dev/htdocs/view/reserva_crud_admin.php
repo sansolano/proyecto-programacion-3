@@ -101,9 +101,9 @@
                      <div class="col-md-8">
                         <select name="opciones" id="opciones" class="form-select" onchange="actualizarCampos()">
                            <option value="0">Selecciona una opción</option>
-                           <option value="Alajeula - San José">Alajuela - San José</option>
-                           <option value="Alajeula - Aurora">Alajuela - Aurora</option>
-                           <option value="Alajeula - San Juan">Alajuela - San Juan</option>
+                           <option value="Alajuela - San José">Alajuela - San José</option>
+                           <option value="Alajuela - Aurora">Alajuela - Aurora</option>
+                           <option value="Alajuela - San Juan">Alajuela - San Juan</option>
                         </select>
                      </div>
                   </div>
@@ -143,15 +143,15 @@
                          var tiempo = document.getElementById("tiempo");
                          var peajes = document.getElementById("peajes");
                      
-                         if (opciones.value === "Alajeula - San José") {
+                         if (opciones.value === "Alajuela - San José") {
                              kilometros.value = "60";
                              tiempo.value = "40";
                              peajes.value = "740";
-                         } else if (opciones.value === "Alajeula - Aurora") {
+                         } else if (opciones.value === "Alajuela - Aurora") {
                              kilometros.value = "45";
                              tiempo.value = "50";
                              peajes.value = "335";
-                         } else if (opciones.value === "Alajeula - San Juan") {
+                         } else if (opciones.value === "Alajuela - San Juan") {
                              kilometros.value = "30";
                              tiempo.value = "60";
                              peajes.value = "240";

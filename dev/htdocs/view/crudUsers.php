@@ -194,18 +194,18 @@ $query = mysqli_query($con, $sql);
                 <?php while($row = mysqli_fetch_array($query)): ?>
                 <tr>
 
-                    <th> <?= $row['id'] ?> </th>
-                    <th> <?= $row['usuario'] ?> </th>
-                    <th> <?= $row['nombre'] ?> </th>
-                    <th> <?= $row['apellido1'] ?> </th>
-                    <th> <?= $row['apellido2'] ?> </th>
-                    <th> <?= $row['email'] ?> </th>
-                    <th> <?= $row['contrasena'] ?> </th>
+                    <th> <?= $row['Id'] ?> </th>
+                    <th> <?= $row['Usuario'] ?> </th>
+                    <th> <?= $row['Nombre'] ?> </th>
+                    <th> <?= $row['Apellido1'] ?> </th>
+                    <th> <?= $row['Apellido2'] ?> </th>
+                    <th> <?= $row['Email'] ?> </th>
+                    <th> <?= $row['Contrasena'] ?> </th>
                     <th> <?= $row['Telefono'] ?> </th>
                     <th> <?= $row['adm'] ?> </th>
                 
-                    <th><a href="php/update_User.php?id=<?= $row['id'] ?>" class="users-table--edit">Editar</a></th>
-                    <th><a href="php/deleteUser.php?id=<?= $row['id'] ?>" class="users-table--delete">Eliminar</a></th>
+                    <th><a href="php/update_User.php?id=<?= $row['Id'] ?>" class="users-table--edit">Editar</a></th>
+                    <th><a href="php/deleteUser.php?id=<?= $row['Id'] ?>" class="users-table--delete">Eliminar</a></th>
                 </tr>
                 <?php endwhile; ?>
                      </tbody>

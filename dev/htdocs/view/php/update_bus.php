@@ -4,7 +4,7 @@
    
    $Id_Bus=$_GET['Id_Bus'];
    
-   $sql = "SELECT * FROM crud_buses WHERE idBus = '$Id_Bus'";
+   $sql = "SELECT * FROM crud_buses WHERE Id = '$Id_Bus'";
    $query = mysqli_query($con, $sql);
    $row=mysqli_fetch_array($query);  //raiz del usuario especifico
    ?>

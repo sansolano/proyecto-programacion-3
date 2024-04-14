@@ -27,13 +27,16 @@ if($conn->query($sql) === true){
 
 // creacion de la tabla del login
 /*
-$sql = "CREATE TABLE login_register_user_2(
-	id INT(11) AUTO_INCREMENT PRIMARY KEY,
-	usuario VARCHAR(100) NOT NULL,
-	nombre VARCHAR(100) NOT NULL,
-	email VARCHAR(100) NOT NULL,
-	contrasena VARCHAR(100) NOT NULL,
-	admin BOOLEAN NOT NULL,
+$sql = "CREATE TABLE login_register_user(
+	Id INT(11) AUTO_INCREMENT PRIMARY KEY,
+	Usuario VARCHAR(100) NOT NULL,    
+	Nombre VARCHAR(100) NOT NULL,	  
+	Apellido1 VARCHAR(100) NOT NULL,	 
+	Apellido2 VARCHAR(100) NOT NULL,	  
+	Email VARCHAR(100) NOT NULL,
+	Contrasena VARCHAR(100) NOT NULL,
+	Telefono VARCHAR(100) NOT NULL,	  
+	adm BOOLEAN NOT NULL,
 	timestamp TIMESTAMP
 )";
 
@@ -54,6 +57,7 @@ $sql = "CREATE TABLE crud_reservas(
 	kilometros INT(11) NOT NULL,
 	asientos INT(11) NOT NULL,
 	costo INT(11) NOT NULL,
+	usuario VARCHAR(100) NOT NULL,
 	timestamp TIMESTAMP
 )";
 
@@ -62,6 +66,24 @@ if($conn->query($sql) === true){
 }else{
 	die("Error al crear tabla: " . $conn->error);
 }
+
 */
 
+// creacion de la tabla del crud_buses
+/*
+$sql = "CREATE TABLE crud_buses(
+	Id INT(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_bus VARCHAR(100) NOT NULL,    
+	capacidad INT(11) NOT NULL,	  
+	costo_km INT(11) NOT NULL,	 
+	timestamp TIMESTAMP
+)";
+
+if($conn->query($sql) === true){
+	echo "La tabla se creó correctamente...";
+}else{
+	die("Error al crear tabla: " . $conn->error);
+}
+
+*/
 ?>

@@ -87,9 +87,9 @@
                      </div>
                      <div class="col-md-8">
                         <select name="rutas" id="rutas" class="form-select">
-                           <option value="Alajeula - San José" <?php if ($row['ruta'] == "Alajuela - San José") echo "selected"; ?>>Alajuela - San José</option>
-                           <option value="Alajeula - Aurora" <?php if ($row['ruta'] == "Alajuela - Aurora") echo "selected"; ?>>Alajuela - Aurora</option>
-                           <option value="Alajeula - San Juan" <?php if ($row['ruta'] == "Alajuela - San Juan") echo "selected"; ?>>Alajuela - San Juan</option>
+                           <option value="Alajuela - San José" <?php if ($row['ruta'] == "Alajuela - San José") echo "selected"; ?>>Alajuela - San José</option>
+                           <option value="Alajuela - Aurora" <?php if ($row['ruta'] == "Alajuela - Aurora") echo "selected"; ?>>Alajuela - Aurora</option>
+                           <option value="Alajuela - San Juan" <?php if ($row['ruta'] == "Alajuela - San Juan") echo "selected"; ?>>Alajuela - San Juan</option>
                         </select>
                      </div>
                   </div>

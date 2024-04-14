@@ -4,7 +4,7 @@ include('connection.php');
 $con = connection();
 
 $Id = $_POST['idReserva'];
-$Ruta = $_POST['ruta'];
+$Ruta = $_POST['rutas'];
 $Kilometros = $_POST['kilometros'];
 $Asientos = $_POST['asientos'];
 $Costo = $_POST['costo'];
@@ -12,7 +12,6 @@ $Estado = $_POST['estadoViaje'];
 
 $sql = "UPDATE crud_reservas SET ruta='$Ruta', estadoViaje='$Estado', kilometros='$Kilometros', asientos='$Asientos', costo='$Costo' WHERE idReserva='$Id'";
 $query = mysqli_query($con, $sql);
-
 if ($query) {
     echo '<script>
     setTimeout(function() {

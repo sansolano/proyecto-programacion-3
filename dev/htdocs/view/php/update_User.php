@@ -82,7 +82,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                <br>
                <br>
                <form action="editUser.php" method="POST">
-               <input type="hidden" name="id" value="<?= $row['id']?>">
+               <input type="hidden" name="id" value="<?= $row['Id']?>">
                   <div class="row g-3">
                      <div class="col-md-4">
                         <!-- Usa col-md-* para dispositivos medianos -->
@@ -90,7 +90,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="usuario" placeholder="Usuario" value="<?= $row['usuario']?>">
+                        <input type="text" name="usuario" placeholder="Usuario" value="<?= $row['Usuario']?>">
                      </div>
                   </div>
                     <br>
@@ -102,7 +102,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="nombre" placeholder="Nombre" value="<?= $row['nombre']?>">
+                        <input type="text" name="nombre" placeholder="Nombre" value="<?= $row['Nombre']?>">
                      </div>
                   </div>
                   <br>
@@ -114,7 +114,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="apellido1" placeholder="Apellido 1" value="<?= $row['apellido1']?>">
+                        <input type="text" name="apellido1" placeholder="Apellido 1" value="<?= $row['Apellido1']?>">
                      </div>
                   </div>
                     <br>
@@ -126,7 +126,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="apellido2" placeholder="Apellido 2" value="<?= $row['apellido2']?>">
+                        <input type="text" name="apellido2" placeholder="Apellido 2" value="<?= $row['Apellido2']?>">
                      </div>
                   </div>
                   <br>
@@ -138,7 +138,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="email" placeholder="Email" value="<?= $row['email']?>">
+                        <input type="text" name="email" placeholder="Email" value="<?= $row['Email']?>">
                      </div>
                   </div>
                   <br>
@@ -150,7 +150,7 @@ $row=mysqli_fetch_array($query);  //raiz del usuario especifico
                      </div>
                      <div class="col-md-8">
                         <!-- Usa col-md-* para dispositivos medianos -->
-                        <input type="text" name="contrasena" placeholder="Contrasena" value="<?= $row['contrasena']?>">
+                        <input type="text" name="contrasena" placeholder="Contrasena" value="<?= $row['Contrasena']?>">
                      </div>
                   </div>
                   <br>

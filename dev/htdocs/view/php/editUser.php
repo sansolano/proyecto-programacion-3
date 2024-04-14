@@ -13,7 +13,7 @@ $Contrasena = $_POST['contrasena'];
 $Telefono = $_POST['telefono'];
 $TUser = $_POST['adm'];
 
-$sql = "UPDATE login_register_user SET id='$Id', usuario='$Usuario', nombre='$Nombre', apellido1='$Apellido1', apellido2='$Apellido2', email='$Email', contrasena='$Contrasena', telefono='$Telefono', adm='$TUser' WHERE id='$Id'";
+$sql = "UPDATE login_register_user SET Id='$Id', Usuario='$Usuario', Nombre='$Nombre', Apellido1='$Apellido1', Apellido2='$Apellido2', Email='$Email', Contrasena='$Contrasena', Telefono='$Telefono', adm='$TUser' WHERE id='$Id'";
 $query = mysqli_query($con, $sql);
 if($query){
     echo '<script>

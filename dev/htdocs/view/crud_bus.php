@@ -132,12 +132,12 @@
                      <tbody>
                         <?php while($row = mysqli_fetch_array($query)): ?>
                         <tr>
-                           <th> <?= $row['idBus'] ?> </th>
+                           <th> <?= $row['Id'] ?> </th>
                            <th> <?= $row['nombre_bus'] ?> </th>
                            <th> <?= $row['capacidad'] ?> </th>
                            <th> <?= $row['costo_km'] ?> </th>
-                           <th><a href="php/update_bus.php?Id_Bus=<?= $row['idBus'] ?>" class="users-table--edit">Editar</a></th>
-                           <th><a href="php/delete_bus.php?Id_Bus=<?= $row['idBus'] ?>" class="users-table--delete">Eliminar</a></th>
+                           <th><a href="php/update_bus.php?Id_Bus=<?= $row['Id'] ?>" class="users-table--edit">Editar</a></th>
+                           <th><a href="php/delete_bus.php?Id_Bus=<?= $row['Id'] ?>" class="users-table--delete">Eliminar</a></th>
                         </tr>
                         <?php endwhile; ?>
                      </tbody>
