@@ -1,7 +1,7 @@
 <h1>Proyecto de Programación 3</h1>
 <p><h2>Universidad Internacional de las Américas</h2></p>
 
-- Estado del proyecto: <strong>En construcción.</strong>
+- Estado del proyecto: <strong>Finalizado.</strong>
 
 <p>La empresa de autobuses turísticos LA CAZADORA R.L. ha contratado a su equipo de
 trabajo para desarrollar una aplicación web para contratar viajes en línea, dicha aplicación
